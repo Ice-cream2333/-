@@ -1,0 +1,21 @@
+<view class="test">
+  <view class="title">
+    <image src="http://ojpmyoxbq.bkt.clouddn.com/test.svg"></image>
+  </view>
+  <text class="tip">{{tip}}</text>
+  <view class="content">
+    <view wx:for="{{words}}" class="inline-block">
+      <view class="card-s" id="{{index}}" bindtap="check" wx:if="{{!item.isCheck}}">
+        <text>{{item.word}}</text>
+      </view>
+      <view class="card-s-hover" id="{{index}}" bindtap="uncheck" wx:else>
+        <view><text>{{item.word}}</text></view>
+      </view>    
+    </view>
+  </view>
+  <view class="enter">
+    <button type="default" class="btn" bindtap="nextStep"><image class="img-enter" src="http://ojpmyoxbq.bkt.clouddn.com/arrow-right.png"></image></button>
+    <text>下一步</text>
+  </view>
+  <text class="quit" bindtap="back">退出测试</text>
+</view>

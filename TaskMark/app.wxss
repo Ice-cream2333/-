@@ -1,0 +1,9 @@
+/**app.wxss**/
+.media-left, .media-right, .media-body{
+  display: table-cell;
+  vertical-align: middle;
+}
+.media-body {
+  height: 180rpx;
+  width: 10000px;
+}

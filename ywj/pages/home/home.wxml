@@ -1,0 +1,76 @@
+<view class="home">
+  <view class="img-logo">
+    <image class="logo" src="http://ojpmyoxbq.bkt.clouddn.com/logo.png"></image>
+  </view>
+  <view class="content">
+    <view class="title">
+      <image src="http://ojpmyoxbq.bkt.clouddn.com/home.svg"></image>
+    </view>
+      <view class="table">
+        <view class="border-bottom border-right" id="{{grades[0].name}}" bindtap="check">
+          <block wx:if="{{grades[0].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[0].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[0].value}}</text>
+          </block>
+        </view>
+        <view class="border-bottom" id="{{grades[1].name}}" bindtap="check">
+          <block wx:if="{{grades[1].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[1].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[1].value}}</text>
+          </block>
+        </view>
+        <view class="border-bottom border-right" id="{{grades[2].name}}" bindtap="check">
+          <block wx:if="{{grades[2].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[2].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[2].value}}</text>
+          </block>
+        </view>
+        <view class="border-bottom" id="{{grades[3].name}}" bindtap="check">
+          <block wx:if="{{grades[3].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[3].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[3].value}}</text>
+          </block>
+        </view>
+        <view class="border-right" id="{{grades[4].name}}" bindtap="check">
+          <block wx:if="{{grades[4].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[4].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[4].value}}</text>
+          </block>
+        </view>
+        <view id="{{grades[5].name}}" bindtap="check">
+          <block wx:if="{{grades[5].checked}}">
+            <view class="radio-s radio-s-hover"><view class="radio-s-hover"></view></view>
+            <text class="radio-text radio-s-hover">{{grades[5].value}}</text>
+          </block>
+          <block wx:else>
+            <view class="radio-s"></view>
+            <text class="radio-text">{{grades[5].value}}</text>
+          </block>
+        </view>
+     </view>
+  </view>
+  <view class="enter">
+    <button type="default" class="btn" bindtap="enter"><image class="img-enter" src="http://ojpmyoxbq.bkt.clouddn.com/arrow-right.png"></image></button>
+    <text>下一步</text>
+  </view>
+</view>

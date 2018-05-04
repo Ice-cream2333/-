@@ -1,0 +1,26 @@
+<view class="result">
+  <view class="header">
+    <view class="title">
+      <image src="http://ojpmyoxbq.bkt.clouddn.com/result.svg"></image>
+    </view>
+    <text class="number">{{result}}</text>
+  </view>
+  <view class="level">
+    <text class="tip">{{tip}}</text>
+    <image class="img-result" src="{{img}}"></image>
+  </view>
+  <view class="btn-group">
+    <view class="mr-30">
+      <button type="default" class="btn" bindtap="backTraining">
+        <image src="http://ojpmyoxbq.bkt.clouddn.com/training.png"></image>
+      </button>
+      <text>返回训练</text>
+    </view>
+    <view class="ml-30">
+      <button type="default" class="btn" bindtap=" onShareAppMessage">
+        <image src="http://ojpmyoxbq.bkt.clouddn.com/share.png"></image>
+      </button>
+      <text>炫耀一下</text>      
+    </view>
+  </view>
+</view>

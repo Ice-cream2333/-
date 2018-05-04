@@ -1,0 +1,28 @@
+<!--pages/homework/homework.wxml-->
+<view class="container">
+  <block wx:for="{{workItem}}" wx:key="this" wx:for-item="item">
+    <view class="item">
+      <view style="margin-bottom: 20rpx;">
+        <text class="num">第 {{index+1}} 题</text>
+        <text wx:if="{{item.score == 1}}" class="correct">正确</text>
+        <text wx:if="{{item.score == 0}}" class="error">错误</text>
+        <text wx:if="{{item.score == null}}" class="count">{{item.images.length}}/9</text>
+      <text wx:if="{{item.score != null}}" class="count" data-qid="{{item.qid}}" bindtap="remark">查看</text>
+      </view>
+      <view class="imagesList">
+        <block wx:for="{{item.images}}" wx:for-item="image" wx:for-index="id">
+          <view class="images" data-src="{{image}}" data-id="{{index}}" bindtap="previewImage">
+            <image class="img" src="{{image}}" mode="aspectFill"></image>
+            <view wx:if="{{corrected == null}}" class="del" data-id="{{index}}" data-index="{{id}}" catchtap="delImage">x</view>
+          </view>
+        </block>
+        <view wx:if="{{corrected == null}}" class="images">
+          <image class="img" src="http://ojpmyoxbq.bkt.clouddn.com/add_img.png" bindtap="chooseImage" data-index="{{index}}"></image>
+        </view>
+       </view>
+    </view>
+  </block>
+  <view class="btn" wx:if="{{corrected == null}}">
+    <button class="btn-add" hover-class="other-button-hover" bindtap="handup">上交作业</button>
+  </view>
+</view>

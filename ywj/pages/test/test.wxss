@@ -1,0 +1,67 @@
+.test {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.title {
+  position: relative;
+  top: 5%;
+}
+.title image {
+  height: 28px;
+}
+.tip {
+  /* 点击你认识的卡片: */
+  font-size: 14px;
+  position: relative;
+  top: 45px;
+}
+.content {
+  position: relative;
+  top: 10%;
+}
+.card-s-hover {
+  width:26vw;
+  height: 26vw;
+  margin: 2vw 2vw;
+  line-height: 26vw; 
+  display: inline-block;
+  text-align: center; 
+}
+.card-s-hover view{
+  background-image: url(http://ojpmyoxbq.bkt.clouddn.com/check.png);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6856FD;
+  border: 1.5vw solid #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 16px 17px 0 rgba(0,0,0,0.10);
+  width:23vw;
+  height: 23vw;
+  display: inline-block;
+  text-align: center;
+  line-height: 23vw;
+  vertical-align: middle;  
+}
+.card-s-hover text {
+  /* 馫: */
+  opacity: 0.2;
+  font-family: PingFangSC-Thin;
+  font-size: 10vh;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.quit {
+  /* 退出测试: */
+  opacity: 0.69;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+}

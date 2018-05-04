@@ -1,0 +1,12 @@
+<!--pages/create/create.wxml-->
+<view class="container">
+  <view class="info">
+    <text class="label">学号</text>
+    <input type="text" bindinput="setSid" placeholder="填写学号" placeholder-class="input-p"/>
+    <text class="label">姓名</text>    
+    <input type="text" bindinput="setSname" placeholder="真实姓名" placeholder-class="input-p"/>
+  </view>
+  <view class="btn">
+    <button class="btn-enter" hover-class="other-button-hover" bindtap="create">完成</button>
+  </view>
+</view>

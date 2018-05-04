@@ -1,0 +1,67 @@
+<view class="training">
+  <view class="title">
+    <image src="http://ojpmyoxbq.bkt.clouddn.com/training.svg"></image>
+  </view>
+  <view class="card-behind" wx:if="{{!isEmpty}}">
+    <text>{{nextword.word}}</text>
+  </view>
+  <view class="card" id="card" catchtouchstart="startMove" catchtouchmove="move" catchtouchend="clearMove" wx:if="{{isturn}}" style="left:{{divX}};top:{{divY}}">
+    <text>{{word.word}}</text>
+  </view>
+  <scroll-view scroll-y="true" class="card-detail" bindtap="hideDetail" wx:else>
+    <view class="card-detail-body text-left">
+      <view class="block">
+        <text class="text-gery">笔顺</text>
+        <text class="text-default">{{word.wordorder}}</text>  
+      </view>
+      <view class="half border-right">
+        <view class="block mb-10">
+          <text class="text-gery">拼音</text>
+          <text class="text-default">{{word.pinYin}}</text>  
+        </view>
+        <view class="block">
+          <text class="text-gery">笔画</text>
+          <text class="text-default">{{word.wordcount}}</text>  
+        </view>
+      </view>
+      <view class="half ">
+        <view class="block pl-30 mb-10">
+          <text class="text-gery">部首</text>
+          <text class="text-default">{{word.radical}}</text>  
+        </view>
+        <view class="block pl-30">
+          <text class="text-gery">结构</text>
+          <text class="text-default">左右</text>  
+        </view>
+      </view>
+      <view class="block border-top pt-20">
+        <text class="block text-gery mb-10">释义</text>
+        <view class="text-default">
+          <!--{{index+1}}. {{item.msg}}-->
+          <text>{{word.brief}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <text class="tip">{{tip}}</text>
+  <view class="btn-group">
+    <view>
+      <button type="default" class="btn" bindtap="pushTest">
+        <image src="http://ojpmyoxbq.bkt.clouddn.com/examination.png"></image>
+      </button>
+      <text>做做测试</text>
+    </view>
+    <view>
+      <button type="default" class="btn" bindtap="pushVacob">
+        <image src="http://ojpmyoxbq.bkt.clouddn.com/vocab.png"></image>
+      </button>
+      <text>看看生词</text>
+    </view>
+    <view>
+      <button type="default" class="btn btn-add" bindtap="addWord">
+        <image src="http://ojpmyoxbq.bkt.clouddn.com/add.png"></image>
+      </button>
+      <text>加入生词</text>
+    </view>
+  </view>
+</view>

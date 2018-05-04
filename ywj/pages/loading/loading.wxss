@@ -1,0 +1,32 @@
+.loading {
+  height: 100%;
+  width: 100%;
+}
+.img-logo {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -130px;
+  text-align: center;
+}
+.img-logo view{
+  display: block;
+  width: 100%;
+}
+.logo {
+  height: 180px;
+  width: 360px;
+}
+.spinner {
+  height: 50px;
+  width: 50px;
+}
+@media (min-device-width : 280px)
+
+and (max-device-width : 320px){
+  .logo {
+    height: 170px;
+    width: 315px;
+  }
+}

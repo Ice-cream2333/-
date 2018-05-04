@@ -1,0 +1,16 @@
+<!--pages/addcourse/addcourse.wxml-->
+<view class="container">
+  <view class="logo">
+    <image class="img-logo" src="http://ojpmyoxbq.bkt.clouddn.com/icon_curriculum.png"></image>
+  </view>
+  <text class="heading">填写课程码</text>
+  <text class="desc">由8位字符组成</text>
+  <view class="inputs">
+    <input type="text" maxlength="8" focus="true" placeholder-class="input-p" bindinput="setCourseId" />
+  </view>
+  <view class="error">{{errormsg}}</view>
+  <view class="btn">
+    <button class="btn-enter" hover-class="other-button-hover" bindtap="add">加入课程</button>
+  </view>
+</view>
+

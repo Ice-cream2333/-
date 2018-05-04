@@ -1,0 +1,88 @@
+/* pages/course/course.wxss */
+page {
+  background: #fff;      
+}
+.contianer {
+  height: 100%;
+  width: 100%;
+}
+.course-num {
+  background: #F9F9F9;      
+  font-size: 24rpx;
+  color: #C4C4C4;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.empty {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -120rpx;
+  margin-left: -100rpx;  
+  height: 40rpx;
+  width: 200rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.date {
+  background: #F9F9F9;    
+  font-size: 26rpx;
+  color: #999999;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 50rpx;
+}
+.item {
+  height: 180rpx;
+  width: 100%;
+  border-bottom: 1px solid #D6D6D6;
+}
+.media-body, .media-right{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.img-right {
+  width: 20rpx;
+  height: 30rpx;
+}
+.heading {
+  display: block;
+  font-size: 30rpx;
+  color: #000000;
+  line-height: 60rpx;
+}
+.desc {
+  display: block;  
+  font-size: 26rpx;
+  color: #999999;
+  line-height: 30rpx;
+}
+.label {
+  margin-left: 10rpx;
+  padding: 10rpx;
+  background: #C4C4C4;
+  border-radius: 2px;
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+.btn {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.btn-add {
+  border-radius: 0;
+  background: #FF6354;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  line-height: 100rpx;  
+}
+.other-button-hover {
+  opacity: 0.8;
+}
+.mt {
+  margin-bottom: 120rpx;
+}

@@ -1,0 +1,136 @@
+/* pages/main/main.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  /*overflow-x: hidden;*/
+}
+swiper {
+  height: 84vh;
+}
+.scroll-view_H {
+  height: 16vh;
+  white-space: nowrap;
+  /*display: flex;*/
+  border-top: 1px solid rgba(92,92,115,0.20);
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+  box-sizing: border-box;
+}
+.date {
+  display: inline-block;
+  padding: 2vh 0;
+  width: 20vw; 
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  text-align: center;
+  color: #8686A9;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+}
+.date-active {
+  color: #5C5C73;
+  border-top: 2px solid #8585A8;
+  box-sizing: border-box;
+}
+.text-date {
+  line-height: 6vh;
+}
+.content {
+  display: inline-block;
+  height: 100%;
+  width: 100vw;
+}
+.math, .chinese {
+  padding: 40rpx;
+}
+.sub-heading {
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+  height: 160rpx;
+}
+.sub-img {
+  display: inline-block;
+  height: 100rpx;
+  width: 100rpx;
+  background: #000;
+  margin-right: 20rpx;
+}
+.sub-title {
+  display: inline-block;
+  /*height: 100rpx;*/
+}
+.sub-main {
+  font-family: PingFangSC-Regular;
+  font-size: 44rpx;
+  color: #5C5C73;
+  line-height: 60rpx;
+}
+.sub-small {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #8686A9;
+  line-height: 40rpx;
+}
+.sub-content {
+  display: inline-block;
+  height: 200rpx;
+  line-height: 250rpx;
+  vertical-align: middle;
+  width: 50%;
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+  box-sizing: border-box;
+}
+.sub-body {
+  padding-left: 30rpx;
+  display: inline-block;
+}
+.sub-content-single {
+  border-right: 1px solid rgba(0,0,0,0.10);
+  /*box-sizing: border-box;*/
+}
+.display-inline-block {
+  display: inline-block;
+}
+.tip {
+  position: fixed;
+  z-index: 9999;
+  background: #3F51B5;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.tip-content {
+  padding: 0 40rpx;
+}
+.btn {
+  position: fixed;
+  z-index: 9999;
+  bottom: 40rpx;
+  right: -100rpx;
+}
+.btn-select {
+  height: 70rpx;
+  width: 150rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  box-shadow: 0 0rpx 36rpx 0 rgba(0,0,0,0.10);
+}
+.text-select {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  color: #000;
+}
+.btn-list {
+  /*height: rpx;*/
+  width: 150rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  box-shadow: 0 0rpx 36rpx 0 rgba(0,0,0,0.10);
+  margin-bottom: 30rpx;
+}

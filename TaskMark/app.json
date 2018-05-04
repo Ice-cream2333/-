@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",    
+    "pages/homework/homework",
+    "pages/create/create", 
+     "pages/courselist/courselist",      
+    "pages/addcourse/addcourse",         
+    "pages/course/course",                         
+    "pages/remark/remark"              
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "批改君 大学",
+    "navigationBarTextStyle":"black"
+  }
+}

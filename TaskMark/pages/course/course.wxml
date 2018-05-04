@@ -1,0 +1,42 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+    <view wx:if="{{isShow}}" class="course-num">课程码：{{cid}}</view>
+    <view wx:if="{{task.length > 0}}" class="mt">
+      <view wx:for="{{task}}" wx:key="index" wx:for-item="i">
+        <view class="date">{{i.date}}</view>
+        <view wx:for="{{i.group}}" wx:key="this" wx:for-item="j" class="item"  data-id="{{j.workId}}" data-name="{{j.workName}}" bindtap="check">
+          <view class="media-body">
+            <view class="heading">{{j.workName}}
+              <view wx:if="{{j.upload == null}}" style="display:inline-block;">
+                <text class="label" style="background:#6D54FF;">未上交</text>
+              </view>
+              <view wx:elif="{{j.corrected != j.workItems}}" style="display:inline-block;">
+                <text class="label">已上交</text>
+              </view>
+            </view>
+            <view wx:if="{{j.upload == null}}">
+              <text class="desc">截止 - {{j.deadline}}</text>
+            </view>
+            <view wx:elif="{{j.upload != null && j.corrected == 0}}">
+              <text class="desc">待批改</text>
+            </view>
+            <view wx:elif="{{j.corrected != 0 && j.corrected != j.workItems}}">
+              <text class="desc">批改中</text>
+            </view>
+            <view wx:elif="j.corrected == j.workItems">
+              <text class="desc">准确率 - {{j.score*100 +'%'}}</text>
+            </view>
+          </view>
+          <view class="media-right">
+            <image class="img-right" src="http://ojpmyoxbq.bkt.clouddn.com/icon_arrow_right.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <text class="empty">暂未布置作业</text>
+    </view>
+  <view class="btn">
+    <button class="btn-add" hover-class="other-button-hover" bindtap="delcourse">退出课程</button>
+  </view>
+</view>

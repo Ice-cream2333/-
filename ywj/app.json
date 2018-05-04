@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/vocab2/vocab",                    
+    "pages/loading/loading",        
+    "pages/home/home",    
+    "pages/training/training",
+    "pages/test/test",    
+    "pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "transparent",
+    "navigationBarTitleText": "识字菌",
+    "navigationBarTextStyle":"#000"
+  }
+}
+

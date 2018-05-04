@@ -1,0 +1,45 @@
+/**index.wxss**/
+.container {
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50%;
+  box-sizing: border-box;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 20rpx;
+}
+.img-logo {
+  height: 80rpx;
+  width: 430rpx;
+}
+.desc {
+  font-size: 34rpx;
+  color: #4F4F4F;
+  line-height: 58rpx;
+}
+.usermotto {
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+}
+.btn-enter {
+  background: #000000;
+  border-radius: 2px;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  line-height: 100rpx;  
+  margin: 0 50rpx;
+}
+.other-button-hover {
+  opacity: 0.8;
+}

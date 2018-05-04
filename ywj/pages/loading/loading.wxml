@@ -1,0 +1,10 @@
+<view class="loading">
+  <view class="img-logo">
+    <view>
+      <image class="logo" src="http://ojpmyoxbq.bkt.clouddn.com/logo.png"></image>
+    </view>
+    <view>
+      <image class="spinner" src="http://ojpmyoxbq.bkt.clouddn.com/puff.svg"></image>
+    </view>
+  </view>
+</view>

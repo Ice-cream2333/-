@@ -1,0 +1,65 @@
+/* pages/addcourse/addcourse.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 50rpx;
+}
+.img-logo {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 15px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.heading {
+  font-size: 40rpx;
+  color: #000000;
+  line-height: 100rpx;
+}
+.desc {
+  font-size: 26rpx;
+  color: #999999;
+  line-height: 40rpx;  
+}
+.error {
+  font-size: 26rpx;
+  color: #ff3300;
+  line-height: 40rpx; 
+  margin-top: 20rpx; 
+}
+.inputs {
+  margin-top: 50rpx;
+}
+.input-p {
+  font-size: 40rpx;
+  color: #000000;
+}
+input {
+  border-bottom: 2px solid #999;
+  text-align: center;
+}
+input:hover {
+  border-bottom: 2px solid #000;    
+}
+.btn {
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+}
+.btn-enter {
+  background: #6D54FF;
+  border-radius: 2px;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  line-height: 100rpx;  
+  margin: 0 50rpx;
+}
+.other-button-hover {
+  opacity: 0.8;
+}

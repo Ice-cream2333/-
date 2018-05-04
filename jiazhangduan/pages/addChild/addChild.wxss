@@ -1,0 +1,76 @@
+/* pages/addChild/addChild.wxss */
+.contianer {
+  height: 100%;
+  /*width: 100%;*/
+}
+.header {
+  text-align: center;
+  border-top: 1px solid rgba(92,92,115,0.20);
+  padding: 80rpx 40rpx 40rpx;
+  box-sizing: border-box;
+}
+.img-logo {
+  width: 120rpx;
+  height: 80rpx;
+  background: #000;
+  margin: 0 auto;
+}
+.text-grey-h {
+  font-family: PingFangSC-Regular;
+  font-size: 44rpx;
+  color: #5C5C73;
+}
+.text-grey {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #8686A9;
+}
+.text-grey-s {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #A9A9C2;
+  line-height: 50rpx;
+}
+.title {
+  margin: 30rpx 0 10rpx;
+}
+.body {
+  padding: 0 40rpx;
+}
+.liner {
+  border-top: 1px solid rgba(92,92,115,0.20);
+  margin: 20rpx -40rpx;
+}
+.input-text {
+  font-family: ProximaNova-Semibold;
+  font-size: 30rpx;
+  color: #000;
+}
+.tip {
+  font-size: 32rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
+}
+.add {
+  padding: 0 40rpx 80rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #5C5C73;
+}
+.btn-add {
+  text-decoration: underline;
+}
+.next {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+}
+.btn-next {
+  height: 120rpx;
+  line-height: 120rpx;
+  width: 120rpx;
+  color: #fff;
+  background: #F0673A;
+  box-shadow: 0 24px 48px 0 rgba(0,0,0,0.16);
+  border-radius: 50%;
+}

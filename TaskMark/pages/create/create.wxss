@@ -1,0 +1,46 @@
+/* pages/create/create.wxss */
+page {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.info {
+  padding: 50rpx;
+}
+.label {
+  font-size: 24rpx;
+  color: #999999;
+  display: block;
+  margin-bottom: 30rpx;
+}
+input {
+  border-bottom: 2px solid #999;
+  margin-bottom: 60rpx;
+}
+input:hover {
+  border-bottom: 2px solid #000;    
+}
+.input-p {
+    /* 真实姓名: */
+  font-size: 30rpx;
+  color: #999;
+}
+.btn {
+  position: fixed;
+  bottom: 50rpx;
+  width: 100%;
+}
+.btn-enter {
+  background: #000000;
+  border-radius: 2px;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  line-height: 100rpx;  
+  margin: 0 50rpx;
+}
+.other-button-hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,12 @@
+<!--pages/remark/remark.wxml-->
+<view class="contianer">
+  <block wx:for="{{data}}">
+    <view class="img">
+      <image src="{{item.img}}" mode="aspectFit"></image>
+    </view>
+  </block>
+  <view wx:if="{{remark}}" class="remark">
+    <view class="heading">注释</view>
+    <view class="content">{{remark}}</view>
+  </view>
+</view>

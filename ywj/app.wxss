@@ -1,0 +1,216 @@
+/**app.wxss**/
+@font-face {
+	font-family: GothamRounded-Bold;
+	src: url('http://ojpmyoxbq.bkt.clouddn.com/GothamRnd-Bold.otf');
+}
+page {
+  background-image: linear-gradient(62deg, #8355FE 0%, #5556FE 100%);
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+.btn {
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.20);
+  box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display:inline-block;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.title {
+  display: block;
+}
+.tip {
+  /* 相当于: */
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: block;  
+}
+.enter {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -32px;
+}
+.enter text {
+  /* 下一步: */
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.img-enter {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: 25%;
+}
+.btn-group {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.btn-group view {
+  display: inline-block;
+  margin: 0 20px;
+}
+.btn-group text {
+  /* 下一步: */
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.btn-group image {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: 25%;
+}
+.btn-add {
+  background: #2DD9D8;
+  box-shadow: 0 30px 50px 0 rgba(0,0,0,0.18);
+}
+.card-s {
+  background-color: #F5F5F4;
+  background-image: url(http://ojpmyoxbq.bkt.clouddn.com/card-bg-s.png);
+  background-size: 100% 100%;
+  border-radius: 3px;
+  box-shadow: 0 16px 17px 0 rgba(0,0,0,0.10);
+  width:26vw;
+  height: 26vw;
+  display: inline-block;
+  margin: 2vw 2vw;
+  text-align: center;
+  line-height: 26vw;
+}
+.card-s text {
+  /* 昶: */
+  font-family: PingFangSC-Thin;
+  font-size: 10vh;
+  color: #555B62;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.card-behind {
+  background-color: #F5F5F4;
+  background-image: url(http://ojpmyoxbq.bkt.clouddn.com/card-bg-l.png);
+  background-size: 100% 100%;
+  border-radius: 6px;
+  width: 40vh;
+  height: 40vh;
+  box-shadow: 0 16px 17px 0 rgba(0,0,0,0.20);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -20vh;
+  margin-left: -20vh;
+  text-align: center;
+  z-index: 1050;
+  line-height: 40vh;
+}
+.card-behind text {
+  /* 昶: */
+  display: inline-block;
+  font-family: PingFangSC-Thin;
+  font-size: 25vh;
+  color: #555B62;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.card {
+  background-color: #F5F5F4;
+  background-image: url(http://ojpmyoxbq.bkt.clouddn.com/card-bg-l.png);
+  background-size: 100% 100%;
+  border-radius: 6px;
+  width: 46vh;
+  height: 46vh;
+  box-shadow: 0 16px 17px 0 rgba(0,0,0,0.20);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -23vh;
+  margin-left: -23vh;
+  z-index: 1200;
+  text-align: center;
+  line-height: 46vh;
+}
+.card text {
+  /* 昶: */
+  display: inline-block;
+  font-family: PingFangSC-Thin;
+  font-size: 30vh;
+  color: #555B62;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.card-detail {
+  background: #F5F5F4;
+  border-radius: 6px;
+  height: 52vh;
+  width: 52vh;
+  box-shadow: 0 16px 17px 0 rgba(0,0,0,0.20);
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  margin-left: -26vh;
+  z-index: 1250;
+  text-align: center;
+}
+.card-detail-body {
+  padding:40rpx 50rpx;
+}
+.text-gery {
+  /* 结构: */
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #555B62;
+  letter-spacing: 0;
+  margin-right: 10px;
+}
+.text-default {
+  /* 丶 丶 丶 丿: */
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #555B62;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.half {
+  display: inline-block;
+  width: 49%;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.border-right {
+  border-right: 2px dashed rgba(85,91,98,0.2);
+}
+.border-top {
+  border-top: 2px dashed rgba(85,91,98,0.2);
+}

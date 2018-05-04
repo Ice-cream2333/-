@@ -1,0 +1,29 @@
+/* pages/remark/remark.wxss */
+page{
+  background-color: #000;
+  color: #fff;
+}
+.container {  
+  height: 100%;
+  width: 100%;
+  padding: 50rpx;
+}
+.img{
+  height: 100%;
+  /*width: 100%;*/
+  padding: 50rpx;
+}
+.heading {
+  opacity: 0.4;
+  font-size: 28rpx;
+  color: #fff;
+  height: 40rpx;
+}
+.content {
+  font-size: 28rpx;
+  color: #FFFFFF;
+  line-height: 48rpx;
+}
+.remark {
+  padding: 20rpx 50rpx;
+}

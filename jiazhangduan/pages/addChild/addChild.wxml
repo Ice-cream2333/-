@@ -1,0 +1,36 @@
+<!--pages/addChild/addChild.wxml-->
+<view class="contianer">
+  <view class="header">
+    <view class="img-logo">
+    </view>
+    <view class="text-grey-h title">输入学校代码和孩子学号</view>
+    <view class="text-grey">向孩子或者老师索取相关信息</view>
+  </view>
+  <block wx:for="{{array}}"> 
+    <view class="body">
+      <view wx:if="{{index !== 0}}" class="text-grey-h tip">
+        第{{index+1}}个孩子
+        <text style="float:right" bindtap="removeOne" data-index="{{index}}">x</text>
+      </view>
+
+      <view class="text-grey-s">学校代号</view>
+      <input class="input-text" type="text" placeholder-class="text-grey-s" placeholder="例如：0001" bindinput="bindKeyInput" focus="true"/>
+      <view class="liner"></view>
+
+      <view class="text-grey-s">孩子学号</view>
+      <input class="input-text" type="text" placeholder-class="text-grey-s" placeholder="例如：0001" bindinput="bindKeyInput"/>
+      <view class="liner"></view>    
+
+      <view class="text-grey-s">验证码</view>
+      <input class="input-text" type="text" placeholder-class="text-grey-s" placeholder="例如：0001" bindinput="bindKeyInput"/>
+      <view class="liner"></view>
+    </view>
+  </block>
+  <view class="add" bindtap="addOne">
+    <text>+ </text>
+    <text class="btn-add">再添加一个孩子</text>
+  </view>
+  <view class="next">
+    <button class="btn-next">></button>
+  </view>
+</view>

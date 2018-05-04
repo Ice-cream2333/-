@@ -1,0 +1,42 @@
+.result {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  position: relative;
+  top: 8%;
+}
+.title {
+  margin-bottom: 15px;
+}
+.title image {
+  height: 28px;
+}
+.number {
+  /* 6000: */
+  font-family: GothamRounded-Bold;
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: block;
+}
+.level {
+ display: block;
+ position: relative;
+ top: 12%;
+}
+.tip {
+  margin-bottom: -20px; 
+}
+.img-result {
+  display: inline-block;
+  height: 55vh;
+  width: 60vh;
+}
+.mr-30 {
+  margin-right: 30px!important;
+}
+.ml-30 {
+  margin-left: 30px!important;
+}

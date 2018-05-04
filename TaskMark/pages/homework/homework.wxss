@@ -1,0 +1,76 @@
+/* pages/homework/homework.wxss */
+.container {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100rpx;
+  border-top: 1px solid #D6D6D6;
+}
+.item {
+  /*height: 280rpx;*/
+  border-bottom: 1px solid #D6D6D6;
+  padding: 30rpx 50rpx;
+}
+.num {
+  font-size: 30rpx;
+  color: #000000;
+}
+.count {
+  font-size: 30rpx;
+  color: #999999;
+  float: right;
+  /*line-height: 40rpx;*/
+}
+imagesList {
+  display: inline-block;  
+  width: auto;
+}
+.images {
+  display: inline-block;
+  height: 20vw;
+  width: 20vw;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.correct {
+  font-size: 30rpx;
+  color: #53D089;
+  margin-left: 20rpx;
+}
+.error {
+  font-size: 30rpx;
+  color: #FF6354;
+  margin-left: 20rpx;
+}
+.del {
+  /*margin-top: -40rpx;*/
+  float: left;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+  width: 20vw;
+  position: relative;
+  height: 40rpx;
+  bottom: 40rpx;
+}
+.btn {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.btn-add {
+  border-radius: 0;
+  background: #6D54FF;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  line-height: 100rpx;  
+}
+.other-button-hover {
+  opacity: 0.8;
+}

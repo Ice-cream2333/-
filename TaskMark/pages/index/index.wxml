@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="logo">
+      <image class="img-logo" src="http://ojpmyoxbq.bkt.clouddn.com/pigaijun_logo.png"></image>
+    </view>
+    <text class="desc">为大学教师量身定制的</text>
+    <text class="desc">作业批改系统</text>
+  </view>
+  <view class="usermotto">
+    <button class="btn-enter" hover-class="other-button-hover" bindtap="enter">开始使用</button>
+  </view>
+</view>

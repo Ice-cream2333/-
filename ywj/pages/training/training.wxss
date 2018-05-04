@@ -1,0 +1,27 @@
+.training {
+  height: 100%;
+  width: 100%;
+}
+.title {
+  /* 识字训练: */
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.title image {
+  height: 28px;
+}
+.tip {
+  /* 小提示：点击卡片查看释义等: */
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 70%;
+}

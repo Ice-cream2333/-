@@ -1,0 +1,23 @@
+<!--pages/courselist/courselist.wxml-->
+<view class="contianer">
+  <view wx:if="{{course.length > 0}}" style="padding-bottom:50px">
+    <view wx:for="{{course}}" wx:key="index" class="item" data-id="{{item.courseId}}" data-name="{{item.courseName}}" bindtap="course">
+      <view class="media-left">
+        <image class="img-course" src="http://ojpmyoxbq.bkt.clouddn.com/icon_curriculum.png"></image>
+      </view>
+      <view class="media-body">
+        <text class="heading">{{item.courseName}}</text>
+        <text class="desc">共 {{item.courseStudentNumber}} 位学生</text>
+      </view>
+      <view class="media-right">
+        <image class="img-right" src="http://ojpmyoxbq.bkt.clouddn.com/icon_arrow_right.png"></image>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <text class="empty">暂无课程</text>
+  </view>
+  <view class="btn">
+    <button class="btn-add" hover-class="other-button-hover" bindtap="addcourse">添加课程</button>
+  </view>
+</view>

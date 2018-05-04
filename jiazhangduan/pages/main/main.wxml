@@ -1,0 +1,105 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+  <!--<view class="tip">
+    <view class="tip-content">
+      <text>第一次使用小学君？</text>
+      <text style="text-decoration: underline;">点此详细了解。</text>
+      <text style="float:right;">x</text>
+    </view>
+  </view>-->
+  <view class="btn" animation="{{animationData}}">
+    <view class="btn-list" wx:if="{{show}}">
+      <view class="text-select">小猪猪</view>
+      <view class="text-select">添加孩子</view>
+    </view>
+    <view class="btn-select">
+      <text class="text-select" bindtap="select">选择孩子</text>
+    </view>
+  </view>
+  
+  <scroll-view class="scroll-view_H" scroll-x="true" scroll-into-view="str{{curindex}}">
+    <view id="str{{index}}" class="{{item.className}}" wx:for="{{dateList}}" bindtap="setActive" data-id="{{index}}">
+      <view class="text-date">{{item.week}}</view>
+      <view class="text-date">{{item.date}}</view>
+    </view>
+  </scroll-view>
+  <!--<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+    <view id="{{index}}" class="content" wx:for="{{[1,2,3,4,5,6]}}">
+      {{index}}
+    </view>
+  </scroll-view>-->
+  <swiper current="{{curindex}}" bindchange="setcurindex">
+    <block wx:for="{{dateList}}">
+      <swiper-item>
+        <scroll-view class="content" scroll-y="true">
+          <view class="math">
+            <view class="sub-heading">
+              <view class="sub-img">
+                <!--<image src="src"></image>-->
+              </view>
+              <view class="sub-title">
+                <view class="sub-main">数学</view>
+                <view class="sub-small">训练逻辑能力</view>
+              </view>
+            </view>
+            <block wx:for="{{[1,2,3,4]}}">
+              <view wx:if="{{index%2==1}}" class="sub-content">
+                <view class="sub-body" >
+                  <view class="sub-main">90分
+                    <view class="sub-small display-inline-block">
+                      | 平均92分
+                    </view>
+                  </view>
+                  <view class="sub-small">作业准确率</view>
+                </view>
+              </view>
+              <view wx:else class="sub-content sub-content-single">
+                <view class="sub-body" >
+                  <view class="sub-main">90分
+                    <view class="sub-small display-inline-block">
+                      | 平均92分
+                    </view>
+                  </view>
+                  <view class="sub-small">作业准确率</view>
+                </view>
+              </view>
+            </block>
+          </view>
+          <view class="chinese">
+            <view class="sub-heading">
+              <view class="sub-img">
+                <!--<image src="src"></image>-->
+              </view>
+              <view class="sub-title">
+                <view class="sub-main">语文</view>
+                <view class="sub-small">语言运用、表达能力</view>
+              </view>
+            </view>
+            <block wx:for="{{[1,2,3,4]}}">
+              <view wx:if="{{index%2==1}}" class="sub-content">
+                <view class="sub-body" >
+                  <view class="sub-main">90分
+                    <view class="sub-small display-inline-block">
+                      | 平均92分
+                    </view>
+                  </view>
+                  <view class="sub-small">作业准确率</view>
+                </view>
+              </view>
+              <view wx:else class="sub-content sub-content-single">
+                <view class="sub-body" >
+                  <view class="sub-main">90分
+                    <view class="sub-small display-inline-block">
+                      | 平均92分
+                    </view>
+                  </view>
+                  <view class="sub-small">作业准确率</view>
+                </view>
+              </view>
+            </block>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

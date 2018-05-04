@@ -1,0 +1,77 @@
+.vocab {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 5%;
+}
+.title {
+  /* 生词本: */
+  font-size: 24px;
+  height: 24px;
+  width: 100%;
+}
+.title image {
+  height: 24px;
+}
+.btn-icon {
+  position: absolute;
+  top: 5%;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  margin-top: -3px;
+}
+.btn-icon image{
+  width: 30px;
+  height: 30px;
+}
+.content {
+  position: relative;
+  top: 10%;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vw;
+}
+.number {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+.number text {
+  /* 5/35: */
+  font-family: GothamRounded-Bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 20px;
+  display: block;
+}
+.card-behind {
+  top: 50%;
+  margin-top: -14vh;
+}
+.card {
+  top: 50%;
+}
+.over {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 2000;
+}
+.explain {
+  position: relative;
+  top: 5%;
+  height: 30px;
+  width: 100%;
+}
+.explain {
+  height: 30px;
+}
